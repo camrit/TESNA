@@ -1,0 +1,231 @@
+======================== CVSClient.processCVSRequest ========================
+   Command:        co
+   Repository:     ./
+   RootRepository: /cvsroot/jedit
+   CVSServer:      2401@jedit.cvs.sourceforge.net
+   RootDirectory:  /cvsroot/jedit
+   LocalDirectory: c:\PhD\Work\Programs\NetworkTest\cvsCheckout\0
+   Connect Method: INETD
+   Rsh Command:    null
+   Server Command: cvs server
+   isPServer?      'true '   user 'anonymous'   pass 'A'
+   There are no user set variables.
+   NumEntries:      0        NumArguments:     2
+   GlobalOptions:   0        GzipStreamLevel:  0
+   redirectOutput  'false'   execInCurDir    'false'
+   sendEntries     'false'   sendEntryfiles  'false'
+   sendModifieds   'false'   sendEmptyMods   'false'
+   sendArguments   'true '   ignoreResult    'false'
+   sendModule      'false'   allowOverWrites 'true '
+   displayReponse  'true '   handleUpdated   'true '
+   handleMerged    'false'   handleCopyFile  'false'
+   handleEntries   'true '   handleFlags     'false'
+   queueResponse   'false'   responseHandler 'com.ice.cvsc.CVSProject'
+   includeNotifies 'false'   notifiesSize    'null'
+*****************************************************************************
+CVSRequest: opening server...
+CVSClient.openServer: creating connection...
+CVSClient.openServer: creating i/o streams...
+CVSClient.openServer: server is open.
+CVSRequest: server is open.
+AUTHENTICATE: verifyOnly? 'false' userName 'anonymous' password 'A'
+CVSClient.SENDLine: 'BEGIN AUTH REQUEST'
+CVSClient.SENDLine: '/cvsroot/jedit'
+CVSClient.SENDLine: 'anonymous'
+CVSClient.SENDLine: 'A'
+CVSClient.SENDLine: 'END AUTH REQUEST'
+CVSClient.READLine: 'I LOVE YOU'
+AUTHENTICATE: REPLY: 'I LOVE YOU'
+CVSClient.SENDLine: 'valid-requests'
+CVSClient.READLine: 'Valid-requests Root Valid-responses valid-requests Repository Directory Max-dotdot Static-directory Sticky Entry Kopt Checkin-time Modified Is-modified UseUnchanged Unchanged Notify Questionable Argument Argumentx Global_option Gzip-stream wrapper-sendme-rcsOptions Set expand-modules ci co update diff log rlog add remove update-patches gzip-file-contents status rdiff tag rtag import admin export history release watch-on watch-off watch-add watch-remove watchers editors init annotate rannotate noop version'
+CVSClient.READLine: 'ok'
+PARSE: ok
+Valid Requests:  useUnchanged 'true'   useDirectory 'true'
+CVSRequest: send root directory...
+CVSClient.SENDLine: 'Root /cvsroot/jedit'
+CVSClient.SENDLine: 'Valid-responses E M ok error Valid-requests Created Merged Updated Update-existing Removed Remove-entry New-entry Checked-in Checksum Copy-file Notified Clear-sticky Set-sticky Clear-static-directory Set-static-directory '
+CVSClient.SENDLine: 'UseUnchanged'
+Utilitizing gzip-file-contents mode at level 6.
+CVSClient.SENDLine: 'gzip-file-contents 6'
+CVSRequest: send entries...
+CVSRequest: send root repository...
+CVSClient.SENDLine: 'Directory .'
+CVSClient.SENDLine: '/cvsroot/jedit'
+CVSRequest: send arguments...
+CVSClient.SENDLine: 'Argument -P'
+CVSClient.SENDLine: 'Argument ./'
+CVSRequest: send command 'co'
+CVSClient.SENDLine: 'co'
+CVSRequest: reading response...
+CVSClient.READLine: 'Clear-static-directory ./'
+PARSE: Clear-static-directory './'
+CVSClient.READLine: '/cvsroot/jedit/'
+PARSE: FullPath '/cvsroot/jedit/'
+CVSProject.handleResponseItem:
+   [ type=3,pathName=./,reposName=/cvsroot/jedit/,modeLine=null,entriesLine=null,newName=null,tagSpec=null,useProgram=null,file=null ]
+Clear-static-directory: pathName './'
+
+CVSProject.ENSUREEntryHierarchy: IGNORING '.' localDirectory!
+   repository '/cvsroot/jedit
+CVSClient.READLine: 'E cvs checkout: Updating .'
+CVSClient.READLine: 'Clear-sticky CVSROOT/'
+PARSE: Clear-sticky 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/'
+CVSProject.handleResponseItem:
+   [ type=4,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/,modeLine=null,entriesLine=null,newName=null,tagSpec=null,useProgram=null,file=null ]
+Clear-sticky: pathName './CVSROOT/'
+
+CVSClient.READLine: 'Clear-static-directory CVSROOT/'
+PARSE: Clear-static-directory 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/'
+CVSProject.handleResponseItem:
+   [ type=3,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/,modeLine=null,entriesLine=null,newName=null,tagSpec=null,useProgram=null,file=null ]
+Clear-static-directory: pathName './CVSROOT/'
+
+CVSClient.READLine: 'E cvs checkout: Updating CVSROOT'
+CVSClient.READLine: 'M U CVSROOT/avail'
+CVSClient.READLine: 'Created CVSROOT/'
+PARSE: Created 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/avail'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/avail'
+CVSClient.READLine: '/avail/1.8///'
+PARSE: Entry '/avail/1.8///'
+CVSClient.READLine: 'u=rw,g=rw,o=rw'
+PARSE: Mode 'u=rw,g=rw,o=rw'
+CVSClient.READLine: 'z371'
+CVSProject.handleResponseItem:
+   [ type=6,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/avail,modeLine=u=rw,g=rw,o=rw,entriesLine=/avail/1.8///,newName=null,tagSpec=null,useProgram=null,file=c:\PhD\Work\Programs\NetworkTest\Temp\Tabaa6c7.cvs ]
+CVSCUtilities.isSubpathInPath: FALSE result
+  adjusted rootPath 'c:/phd/work/programs/networktest/cvscheckout//0'
+  adjusted subPath  'c:/phd/work/programs/networktest/cvscheckout/0/cvsroot'
+CVSClient.ensureLocalTree:  LOCAL SUBDIR IS NOT IN ROOT!!
+   localRoot   'c:/PhD/Work/Programs/NetworkTest/cvsCheckout//0'
+   localSubDir 'c:\PhD\Work\Programs\NetworkTest\cvsCheckout\0\CVSROOT'
+CVSClient.READLine: 'M U CVSROOT/avail.bad'
+CVSClient.READLine: 'Created CVSROOT/'
+PARSE: Created 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/avail.bad'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/avail.bad'
+CVSClient.READLine: '/avail.bad/1.4///'
+PARSE: Entry '/avail.bad/1.4///'
+CVSClient.READLine: 'u=rw,g=rw,o=rw'
+PARSE: Mode 'u=rw,g=rw,o=rw'
+CVSClient.READLine: '80'
+CVSProject.handleResponseItem:
+   [ type=6,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/avail.bad,modeLine=u=rw,g=rw,o=rw,entriesLine=/avail.bad/1.4///,newName=null,tagSpec=null,useProgram=null,file=c:\PhD\Work\Programs\NetworkTest\Temp\Tabaa6c8.cvs ]
+CVSCUtilities.isSubpathInPath: FALSE result
+  adjusted rootPath 'c:/phd/work/programs/networktest/cvscheckout//0'
+  adjusted subPath  'c:/phd/work/programs/networktest/cvscheckout/0/cvsroot'
+CVSClient.ensureLocalTree:  LOCAL SUBDIR IS NOT IN ROOT!!
+   localRoot   'c:/PhD/Work/Programs/NetworkTest/cvsCheckout//0'
+   localSubDir 'c:\PhD\Work\Programs\NetworkTest\cvsCheckout\0\CVSROOT'
+CVSClient.READLine: 'M U CVSROOT/checkoutlist'
+CVSClient.READLine: 'Created CVSROOT/'
+PARSE: Created 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/checkoutlist'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/checkoutlist'
+CVSClient.READLine: '/checkoutlist/1.4///'
+PARSE: Entry '/checkoutlist/1.4///'
+CVSClient.READLine: 'u=rw,g=rw,o=rw'
+PARSE: Mode 'u=rw,g=rw,o=rw'
+CVSClient.READLine: 'z316'
+CVSProject.handleResponseItem:
+   [ type=6,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/checkoutlist,modeLine=u=rw,g=rw,o=rw,entriesLine=/checkoutlist/1.4///,newName=null,tagSpec=null,useProgram=null,file=c:\PhD\Work\Programs\NetworkTest\Temp\Tabaa6c9.cvs ]
+CVSCUtilities.isSubpathInPath: FALSE result
+  adjusted rootPath 'c:/phd/work/programs/networktest/cvscheckout//0'
+  adjusted subPath  'c:/phd/work/programs/networktest/cvscheckout/0/cvsroot'
+CVSClient.ensureLocalTree:  LOCAL SUBDIR IS NOT IN ROOT!!
+   localRoot   'c:/PhD/Work/Programs/NetworkTest/cvsCheckout//0'
+   localSubDir 'c:\PhD\Work\Programs\NetworkTest\cvsCheckout\0\CVSROOT'
+CVSClient.READLine: 'M U CVSROOT/commitinfo'
+CVSClient.READLine: 'Created CVSROOT/'
+PARSE: Created 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/commitinfo'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/commitinfo'
+CVSClient.READLine: '/commitinfo/1.3///'
+PARSE: Entry '/commitinfo/1.3///'
+CVSClient.READLine: 'u=rw,g=rw,o=rw'
+PARSE: Mode 'u=rw,g=rw,o=rw'
+CVSClient.READLine: 'z438'
+CVSProject.handleResponseItem:
+   [ type=6,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/commitinfo,modeLine=u=rw,g=rw,o=rw,entriesLine=/commitinfo/1.3///,newName=null,tagSpec=null,useProgram=null,file=c:\PhD\Work\Programs\NetworkTest\Temp\Tabaa6ca.cvs ]
+CVSCUtilities.isSubpathInPath: FALSE result
+  adjusted rootPath 'c:/phd/work/programs/networktest/cvscheckout//0'
+  adjusted subPath  'c:/phd/work/programs/networktest/cvscheckout/0/cvsroot'
+CVSClient.ensureLocalTree:  LOCAL SUBDIR IS NOT IN ROOT!!
+   localRoot   'c:/PhD/Work/Programs/NetworkTest/cvsCheckout//0'
+   localSubDir 'c:\PhD\Work\Programs\NetworkTest\cvsCheckout\0\CVSROOT'
+CVSClient.READLine: 'M U CVSROOT/config'
+CVSClient.READLine: 'Created CVSROOT/'
+PARSE: Created 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/config'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/config'
+CVSClient.READLine: '/config/1.3///'
+PARSE: Entry '/config/1.3///'
+CVSClient.READLine: 'u=rw,g=rw,o=rw'
+PARSE: Mode 'u=rw,g=rw,o=rw'
+CVSClient.READLine: 'z237'
+CVSProject.handleResponseItem:
+   [ type=6,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/config,modeLine=u=rw,g=rw,o=rw,entriesLine=/config/1.3///,newName=null,tagSpec=null,useProgram=null,file=c:\PhD\Work\Programs\NetworkTest\Temp\Tabaa6cb.cvs ]
+CVSCUtilities.isSubpathInPath: FALSE result
+  adjusted rootPath 'c:/phd/work/programs/networktest/cvscheckout//0'
+  adjusted subPath  'c:/phd/work/programs/networktest/cvscheckout/0/cvsroot'
+CVSClient.ensureLocalTree:  LOCAL SUBDIR IS NOT IN ROOT!!
+   localRoot   'c:/PhD/Work/Programs/NetworkTest/cvsCheckout//0'
+   localSubDir 'c:\PhD\Work\Programs\NetworkTest\cvsCheckout\0\CVSROOT'
+CVSClient.READLine: 'M U CVSROOT/cvsignore'
+CVSClient.READLine: 'Created CVSROOT/'
+PARSE: Created 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/cvsignore'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/cvsignore'
+CVSClient.READLine: '/cvsignore/1.1///'
+PARSE: Entry '/cvsignore/1.1///'
+CVSClient.READLine: 'u=rw,g=rw,o=rw'
+PARSE: Mode 'u=rw,g=rw,o=rw'
+CVSClient.READLine: '7'
+CVSProject.handleResponseItem:
+   [ type=6,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/cvsignore,modeLine=u=rw,g=rw,o=rw,entriesLine=/cvsignore/1.1///,newName=null,tagSpec=null,useProgram=null,file=c:\PhD\Work\Programs\NetworkTest\Temp\Tabaa6cc.cvs ]
+CVSCUtilities.isSubpathInPath: FALSE result
+  adjusted rootPath 'c:/phd/work/programs/networktest/cvscheckout//0'
+  adjusted subPath  'c:/phd/work/programs/networktest/cvscheckout/0/cvsroot'
+CVSClient.ensureLocalTree:  LOCAL SUBDIR IS NOT IN ROOT!!
+   localRoot   'c:/PhD/Work/Programs/NetworkTest/cvsCheckout//0'
+   localSubDir 'c:\PhD\Work\Programs\NetworkTest\cvsCheckout\0\CVSROOT'
+CVSClient.READLine: 'M U CVSROOT/cvswrappers'
+CVSClient.READLine: 'Created CVSROOT/'
+PARSE: Created 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/cvswrappers'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/cvswrappers'
+CVSClient.READLine: '/cvswrappers/1.2///'
+PARSE: Entry '/cvswrappers/1.2///'
+CVSClient.READLine: 'u=rw,g=rw,o=rw'
+PARSE: Mode 'u=rw,g=rw,o=rw'
+CVSClient.READLine: 'z443'
+CVSProject.handleResponseItem:
+   [ type=6,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/cvswrappers,modeLine=u=rw,g=rw,o=rw,entriesLine=/cvswrappers/1.2///,newName=null,tagSpec=null,useProgram=null,file=c:\PhD\Work\Programs\NetworkTest\Temp\Tabaa6cd.cvs ]
+CVSCUtilities.isSubpathInPath: FALSE result
+  adjusted rootPath 'c:/phd/work/programs/networktest/cvscheckout//0'
+  adjusted subPath  'c:/phd/work/programs/networktest/cvscheckout/0/cvsroot'
+CVSClient.ensureLocalTree:  LOCAL SUBDIR IS NOT IN ROOT!!
+   localRoot   'c:/PhD/Work/Programs/NetworkTest/cvsCheckout//0'
+   localSubDir 'c:\PhD\Work\Programs\NetworkTest\cvsCheckout\0\CVSROOT'
+CVSClient.READLine: 'M U CVSROOT/editinfo'
+CVSClient.READLine: 'Created CVSROOT/'
+PARSE: Created 'CVSROOT/'
+CVSClient.READLine: '/cvsroot/jedit/CVSROOT/editinfo'
+PARSE: FullPath '/cvsroot/jedit/CVSROOT/editinfo'
+CVSClient.READLine: '/editinfo/1.1///'
+PARSE: Entry '/editinfo/1.1///'
+CVSClient.READLine: 'u=rw,g=rw,o=rw'
+PARSE: Mode 'u=rw,g=rw,o=rw'
+CVSClient.READLine: 'z539'
+CVSProject.handleResponseItem:
+   [ type=6,pathName=CVSROOT/,reposName=/cvsroot/jedit/CVSROOT/editinfo,modeLine=u=rw,g=rw,o=rw,entriesLine=/editinfo/1.1///,newName=null,tagSpec=null,useProgram=null,file=c:\PhD\Work\Programs\NetworkTest\Temp\Tabaa6ce.cvs ]
+CVSCUtilities.isSubpathInPath: FALSE result
+  adjusted rootPath 'c:/phd/work/programs/networktest/cvscheckout//0'
+  adjusted subPath  'c:/phd/work/programs/networktest/cvscheckout/0/cvsroot'
+CVSClient.ensureLocalTree:  LOCAL SUBDIR IS NOT IN ROOT!!
+   localRoot   'c:/PhD/Work/Programs/NetworkTest/cvsCheckout//0'
+   localSubDir 'c:\PhD\Work\Programs\NetworkTest\cvsCheckout\0\CVSROOT'
