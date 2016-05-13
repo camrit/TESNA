@@ -16,6 +16,7 @@ Please note that the last part (3rd point above) of identifying reasons for the 
 
 Also see: Amrit C, Hillegersberg J. TESNA: A Tool for Detecting Coordination Problems.
 
+To RUN:
 change Manifest File in tesna.jar
 
 with:
